@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Setup help, troubleshooting, and privacy information for Agent Micro Controller, the iPhone and iPad control deck for your paired Macs.">
+  <meta name="theme-color" content="#f5f6f5">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Support · Agent Micro Controller</title>
+  <link rel="canonical" href="https://rickndanger-ctrl.github.io/agent-micro-controller-site/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Agent Micro Controller support home">
+        <span class="brand-mark" aria-hidden="true"><i class="blue"></i><i class="purple"></i><i class="pink"></i><i class="orange"></i><i class="green"></i><i class="cyan"></i></span>
+        <span>Agent Micro Controller</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation"><a href="./" aria-current="page">Support</a><a href="privacy/">Privacy</a></nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="welcome">
+        <div class="hero-copy">
+          <span class="eyebrow">Control Deck · Help &amp; support</span>
+          <h1 id="welcome">Your agents.<br>Your controls.<br><span>A little help.</span></h1>
+          <p>Agent Micro Controller brings your Mac’s supported AI apps to a control deck on your iPhone or iPad. Here’s how to keep everything connected.</p>
+          <div class="hero-links"><a class="button" href="#troubleshooting">Find a quick fix <span aria-hidden="true">↗</span></a><a href="privacy/">Read our privacy policy</a></div>
+        </div>
+        <aside class="setup-card" aria-labelledby="setup-title">
+          <div class="key-motif" aria-hidden="true"><i class="blue"></i><i class="purple"></i><i class="pink"></i><i class="orange"></i><i class="green"></i><i class="cyan"></i></div>
+          <h2 id="setup-title">Three things to connect.</h2>
+          <div class="setup-row"><span class="setup-number" aria-hidden="true">1</span><div><strong>The controller app</strong><span>On your iPhone or iPad.</span></div></div>
+          <div class="setup-row"><span class="setup-number" aria-hidden="true">2</span><div><strong>The Mac companion</strong><span>Open on the Mac you want to control.</span></div></div>
+          <div class="setup-row"><span class="setup-number" aria-hidden="true">3</span><div><strong>Your private Tailscale network</strong><span>Connected on both devices, then paired in the app.</span></div></div>
+        </aside>
+      </section>
+
+      <section class="section" id="troubleshooting" aria-labelledby="help-title">
+        <div class="section-heading"><div><span class="eyebrow">Start here</span><h2 id="help-title">Back in control.</h2></div><p>Choose the Mac and app you mean to use first. Then try the check that matches what you’re seeing.</p></div>
+        <div class="help-grid">
+          <article class="help-card"><h3><span class="card-dot blue" aria-hidden="true"></span>Pair a Mac</h3><p>Open the Mac companion and show its pairing code. In the controller’s <strong>Settings</strong>, choose <strong>Scan pairing code</strong>. Keep Tailscale connected on both devices. Treat pairing codes like passwords.</p></article>
+          <article class="help-card"><h3><span class="card-dot purple" aria-hidden="true"></span>The Mac says disconnected</h3><p>Make sure the companion is running and the Mac is awake. Check Tailscale on both devices, select the intended Mac, and refresh. Open <strong>Settings → Check this Mac</strong> for more detail.</p></article>
+          <article class="help-card"><h3><span class="card-dot pink" aria-hidden="true"></span>A chat or action is missing</h3><p>Open the selected AI app on your Mac, then refresh the controller. Check that the Mac companion has <strong>Accessibility</strong> permission in macOS Settings. <strong>Check this Mac</strong> can help identify unavailable controls.</p></article>
+          <article class="help-card"><h3><span class="card-dot orange" aria-hidden="true"></span>Hold to talk needs attention</h3><p>Allow <strong>Microphone</strong> and <strong>Speech Recognition</strong> in your device’s Settings. Hold to dictate, release to review your draft, and press <strong>Send</strong> when ready. Dictation requires on-device speech recognition support.</p></article>
+          <article class="help-card"><h3><span class="card-dot green" aria-hidden="true"></span>A Send result is uncertain</h3><p>Look in the selected chat on your Mac before trying again. A message may have arrived even when its confirmation could not be read. Checking first helps avoid sending the same prompt twice.</p></article>
+          <article class="help-card"><h3><span class="card-dot cyan" aria-hidden="true"></span>Remove a paired device</h3><p>In the Mac companion’s paired-device list, choose <strong>Revoke</strong>. Removing the iPhone or iPad app alone does not revoke its access. Older shared credentials have a separate legacy-access control.</p></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-title">
+        <div class="contact-card">
+          <div><span class="eyebrow">Something else?</span><h2 id="contact-title">Tell us what happened.</h2><p>Report a problem or ask a question through the public support repository. Privacy questions and removal requests can go there too—without the sensitive details.</p><a class="button" href="https://github.com/rickndanger-ctrl/agent-micro-controller-site/issues">Open support on GitHub <span aria-hidden="true">↗</span></a></div>
+          <div class="issue-notes"><h3>A useful report includes</h3><ul><li>Your app and operating system versions.</li><li>The control or feature you tried.</li><li>What you expected and what happened instead.</li></ul><p class="private-warning"><strong>GitHub issues are public.</strong> Don’t post pairing codes, credentials, private chats, or unredacted screenshots. Remove sensitive information before sharing.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>Agent Micro Controller · Your agents. Your controls.</p><nav aria-label="Footer navigation"><a href="privacy/">Privacy policy</a><a href="https://github.com/rickndanger-ctrl/agent-micro-controller-site/issues">Support</a></nav></footer>
+  </div>
+</body>
+</html>
