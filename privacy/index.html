@@ -24,7 +24,7 @@
       <div class="policy-header">
         <span class="eyebrow">Your information</span>
         <h1>Privacy policy.</h1>
-        <p>Effective date: <time datetime="2026-11-16">November 16, 2026</time></p>
+        <p>Effective date: <time datetime="2026-11-18">November 18, 2026</time></p>
       </div>
       <div class="policy-layout">
         <nav class="policy-toc" aria-label="Privacy policy sections"><span class="eyebrow">On this page</span><ol>
@@ -47,7 +47,7 @@
 <p>A draft is not submitted as a chat prompt until you press Send. If you enable glasses Follow, draft text can be mirrored before Send, as explained below. A shortcut that opens another app's voice feature uses that app's own audio handling and privacy policy.</p>
 <p>The app requests Microphone and Speech Recognition permissions for dictation, Camera permission to scan a Mac's pairing code, and Local Network permission to reach your paired Macs. You can manage these permissions in iOS or iPadOS Settings.</p>
 <h2 id="communication-with-your-mac">Communication with your Mac</h2>
-<p>The app connects to your paired Mac over HTTPS, commonly through your private Tailscale network. It exchanges chat and action lists, mappings, status, artifacts, commands, and command receipts. This communication also occurs when you refresh or when the app checks connection status, not just when you press a controller key.</p>
+<p>The app connects to your paired Mac over HTTPS, either directly on your local Wi-Fi network (encrypted and pinned to that Mac’s own certificate) or through your private Tailscale network. It exchanges chat and action lists, mappings, status, artifacts, commands, and command receipts. This communication also occurs when you refresh or when the app checks connection status, not just when you press a controller key.</p>
 <p>When you press Send, the draft goes to the selected Mac and is passed to the selected supported chat app. That app may store the message or send it to its own services. Claude, Codex, Muse, Tailscale, and any other services you use have their own privacy policies and account requirements.</p>
 <p>The Mac companion stores mappings, artifact records and files you choose to export, pairing records, command-result records, and a bounded activity log. The activity log records command types, result messages, timestamps, and timings; it does not record the submitted prompt text. Command fingerprints are retained to distinguish repeated requests without storing a second prompt copy in the receipt ledger. The destination chat app may retain the prompt itself.</p>
 <h2 id="artifact-previews-and-websites">Artifact previews and websites</h2>

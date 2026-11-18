@@ -27,22 +27,22 @@
           <span class="eyebrow">Control Deck · Help &amp; support</span>
           <h1 id="welcome">Your agents.<br>Your controls.<br><span>A little help.</span></h1>
           <p>Agent Micro Controller brings your Mac’s supported AI apps to a control deck on your iPhone or iPad. Here’s how to keep everything connected.</p>
-          <div class="hero-links"><a class="button" href="#troubleshooting">Find a quick fix <span aria-hidden="true">↗</span></a><a href="privacy/">Read our privacy policy</a></div>
+          <div class="hero-links"><a class="button" href="https://github.com/rickndanger-ctrl/genesis-microcontroller-app/releases/latest">Download the Mac companion <span aria-hidden="true">↗</span></a><a href="#troubleshooting">Find a quick fix</a><a href="privacy/">Read our privacy policy</a></div>
         </div>
         <aside class="setup-card" aria-labelledby="setup-title">
           <div class="key-motif" aria-hidden="true"><i class="blue"></i><i class="purple"></i><i class="pink"></i><i class="orange"></i><i class="green"></i><i class="cyan"></i></div>
           <h2 id="setup-title">Three things to connect.</h2>
           <div class="setup-row"><span class="setup-number" aria-hidden="true">1</span><div><strong>The controller app</strong><span>On your iPhone or iPad.</span></div></div>
-          <div class="setup-row"><span class="setup-number" aria-hidden="true">2</span><div><strong>The Mac companion</strong><span>Open on the Mac you want to control.</span></div></div>
-          <div class="setup-row"><span class="setup-number" aria-hidden="true">3</span><div><strong>Your private Tailscale network</strong><span>Connected on both devices, then paired in the app.</span></div></div>
+          <div class="setup-row"><span class="setup-number" aria-hidden="true">2</span><div><strong>The Mac companion</strong><span><a href="https://github.com/rickndanger-ctrl/genesis-microcontroller-app/releases/latest">Download it free</a> and open it on the Mac you want to control (macOS 14 or later).</span></div></div>
+          <div class="setup-row"><span class="setup-number" aria-hidden="true">3</span><div><strong>The same Wi-Fi</strong><span>Scan the Mac’s pairing code in the app. Tailscale is optional, for use away from home.</span></div></div>
         </aside>
       </section>
 
       <section class="section" id="troubleshooting" aria-labelledby="help-title">
         <div class="section-heading"><div><span class="eyebrow">Start here</span><h2 id="help-title">Back in control.</h2></div><p>Choose the Mac and app you mean to use first. Then try the check that matches what you’re seeing.</p></div>
         <div class="help-grid">
-          <article class="help-card"><h3><span class="card-dot blue" aria-hidden="true"></span>Pair a Mac</h3><p>Open the Mac companion and show its pairing code. In the controller’s <strong>Settings</strong>, choose <strong>Scan pairing code</strong>. Keep Tailscale connected on both devices. Treat pairing codes like passwords.</p></article>
-          <article class="help-card"><h3><span class="card-dot purple" aria-hidden="true"></span>The Mac says disconnected</h3><p>Make sure the companion is running and the Mac is awake. Check Tailscale on both devices, select the intended Mac, and refresh. Open <strong>Settings → Check this Mac</strong> for more detail.</p></article>
+          <article class="help-card"><h3><span class="card-dot blue" aria-hidden="true"></span>Pair a Mac</h3><p>Open the Mac companion and show its pairing code. In the controller’s <strong>Settings</strong>, choose <strong>Scan pairing code</strong>. Keep both devices on the same Wi-Fi, or on Tailscale for use away from home. Wi-Fi pairing needs macOS 15 or later on the Mac. Treat pairing codes like passwords.</p></article>
+          <article class="help-card"><h3><span class="card-dot purple" aria-hidden="true"></span>The Mac says disconnected</h3><p>Make sure the companion is running and the Mac is awake. Check that both devices are on the same Wi-Fi (or on Tailscale when away from home), select the intended Mac, and refresh. Open <strong>Settings → Check this Mac</strong> for more detail.</p></article>
           <article class="help-card"><h3><span class="card-dot pink" aria-hidden="true"></span>A chat or action is missing</h3><p>Open the selected AI app on your Mac, then refresh the controller. Check that the Mac companion has <strong>Accessibility</strong> permission in macOS Settings. <strong>Check this Mac</strong> can help identify unavailable controls.</p></article>
           <article class="help-card"><h3><span class="card-dot orange" aria-hidden="true"></span>Hold to talk needs attention</h3><p>Allow <strong>Microphone</strong> and <strong>Speech Recognition</strong> in your device’s Settings. Hold to dictate, release to review your draft, and press <strong>Send</strong> when ready. Dictation requires on-device speech recognition support.</p></article>
           <article class="help-card"><h3><span class="card-dot green" aria-hidden="true"></span>A Send result is uncertain</h3><p>Look in the selected chat on your Mac before trying again. A message may have arrived even when its confirmation could not be read. Checking first helps avoid sending the same prompt twice.</p></article>
