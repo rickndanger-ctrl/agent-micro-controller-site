@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Experimental: show your Agent Micro Controller chat and draft on Even Realities G2 glasses. What you need, how to set it up, and how to fix a lost connection.">
+  <meta name="theme-color" content="#f5f6f5">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>G2 glasses (experimental) · Agent Micro Controller</title>
+  <link rel="canonical" href="https://rickndanger-ctrl.github.io/agent-micro-controller-site/glasses/">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Agent Micro Controller support home">
+        <span class="brand-mark" aria-hidden="true"><i class="blue"></i><i class="purple"></i><i class="pink"></i><i class="orange"></i><i class="green"></i><i class="cyan"></i></span>
+        <span>Agent Micro Controller</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation"><a href="../">Support</a><a href="./" aria-current="page">Glasses</a><a href="../privacy/">Privacy</a></nav>
+    </header>
+    <main id="main">
+      <div class="policy-header">
+        <span class="eyebrow">Experimental</span>
+        <h1>Even G2 glasses.</h1>
+        <p>Show the chat you picked, your draft and the reply on Even Realities G2 glasses while you use Agent Micro Controller.</p>
+      </div>
+      <div class="policy-layout">
+        <nav class="policy-toc" aria-label="Glasses guide sections"><span class="eyebrow">On this page</span><ol>
+<li><a href="#status">Where this stands</a></li>
+<li><a href="#what-you-need">What you need</a></li>
+<li><a href="#set-up">Set it up</a></li>
+<li><a href="#use">Use it</a></li>
+<li><a href="#trouble">If the glasses stop updating</a></li>
+<li><a href="#source">Source code</a></li>
+        </ol></nav>
+        <article class="policy-body" aria-label="Even G2 glasses guide">
+<h2 id="status">Where this stands</h2>
+<p>Glasses support is an <strong>experimental, do-it-yourself add-on</strong>. It works, but it isn't a one-tap setup yet: the glasses app is not published in Even Hub, and each Mac needs a small bridge service that you install yourself. Everything else in Agent Micro Controller works without it.</p>
+<p>The glasses only display. Dictation, review and <strong>Send</strong> always happen in Agent Micro Controller on your iPhone or iPad; nothing is sent from the glasses.</p>
+
+<h2 id="what-you-need">What you need</h2>
+<ul>
+<li>Even Realities G2 glasses, connected to the Even app on an iPhone.</li>
+<li>Agent Micro Controller on your iPhone or iPad, paired with your Mac.</li>
+<li><strong>Tailscale</strong> on the iPhone running the Even app, and on each Mac. The glasses reach your Macs only through Tailscale, even when the controller itself pairs over Wi-Fi.</li>
+<li>On each Mac: Node 22.13 or newer and the Genesis G2 bridge from the source code below.</li>
+<li>Comfort with the Terminal. Building the glasses app needs Even's developer tools.</li>
+</ul>
+
+<h2 id="set-up">Set it up</h2>
+<ol>
+<li>In Agent Micro Controller, open <strong>Settings</strong> and turn on <strong>Even G2 glasses (experimental)</strong>. The Follow controls appear below the controller.</li>
+<li>On each Mac, follow the Genesis G2 README to build the glasses app, install its bridge and give the bridge a Tailscale HTTPS address.</li>
+<li>Show that Mac's G2 pairing code, then in the Even app open <strong>Even Hub</strong>, use the developer control at the top right, and scan it. The glasses app opens and pairs with the Mac. Treat the code like a password.</li>
+</ol>
+
+<h2 id="use">Use it</h2>
+<ol>
+<li>Open the glasses app inside Even on the iPhone, with the glasses connected.</li>
+<li>In Agent Micro Controller, choose the same Mac and agent, then turn on <strong>Follow this controller</strong>.</li>
+<li>Tap a chat key. The glasses follow it, show your draft as you dictate, and show the reply. Send from the controller as usual.</li>
+</ol>
+<p>Only one iPhone or iPad controls the glasses at a time; taking over from another device is an explicit choice.</p>
+
+<h2 id="trouble">If the glasses stop updating</h2>
+<ul>
+<li><strong>Check Tailscale on the iPhone first.</strong> If the glasses app says it can't reach the computer, open Tailscale on the phone. If it's off, turn it on. If it says Connected but shows a warning, switch it off and back on: Tailscale can look connected while passing no traffic.</li>
+<li>Make sure the Mac you picked in the glasses app is awake and online. It does not switch to another Mac by itself.</li>
+<li>Make sure the glasses are connected in the Even app. If they aren't, that's between the glasses and Even, not this app.</li>
+<li>If another iPhone or iPad holds Follow, turn Follow off there or take over.</li>
+</ul>
+
+<h2 id="source">Source code</h2>
+<p>The glasses app and bridge are open source under the MIT licence: <a href="https://github.com/rickndanger-ctrl/genesis-g2">github.com/rickndanger-ctrl/genesis-g2</a>. Questions or problems: <a href="https://github.com/rickndanger-ctrl/agent-micro-controller-site/issues">open an issue</a>.</p>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer"><p>Agent Micro Controller · Your agents. Your controls.</p><nav aria-label="Footer navigation"><a href="../">Support home</a><a href="https://github.com/rickndanger-ctrl/agent-micro-controller-site/issues">Contact</a></nav></footer>
+  </div>
+</body>
+</html>
